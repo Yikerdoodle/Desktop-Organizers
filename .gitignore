@@ -1,0 +1,8 @@
+﻿__pycache__/
+*.pyc
+facts-cache.json
+text-cache.json
+sort-log.csv
+tidy-log.csv
+move-log.csv
+inbox-sorter/config.json

@@ -1,0 +1,46 @@
+﻿{
+    "desktop":  "C:\\Users\\Public\\Desktop",
+    "inbox":  "C:\\Users\\Public\\Inbox",
+    "libraries":  {
+                      "Pictures":  "C:\\Users\\Public\\Pictures",
+                      "Pictures\\Screenshots":  "C:\\Users\\Public\\Pictures\\Screenshots",
+                      "Pictures\\Nintendo Switch":  "C:\\Users\\Public\\Pictures\\Nintendo Switch",
+                      "Videos":  "C:\\Users\\Public\\Videos",
+                      "Music":  "C:\\Users\\Public\\Music",
+                      "Program installers":  "C:\\Users\\Public\\Downloads\\program-setups"
+                  },
+    "duplicate_search":  [
+                             "C:\\Users\\Public\\Desktop",
+                             "C:\\Users\\Public\\Pictures",
+                             "C:\\Users\\Public\\Videos",
+                             "C:\\Users\\Public\\Downloads"
+                         ],
+    "ignore_words":  [
+                         "yourname"
+                     ],
+    "skip_subfolders":  [
+                            "older drafts",
+                            "old drafts",
+                            "old",
+                            "old versions",
+                            "backup",
+                            "backups"
+                        ],
+    "descriptions":  {
+                         "2 - Projects":  "what this folder is for, in one sentence (the local AI reads this)",
+                         "9 - Archive":  "finished or old things to keep but not look at every day"
+                     },
+    "ffprobe":  "C:\\ffmpeg\\bin\\ffprobe.exe",
+    "thresholds":  {
+                       "confident":  0.6,
+                       "margin":  0.15
+                   },
+    "ai":  {
+               "enabled":  true,
+               "model":  "qwen3.5:4b",
+               "ollama_url":  "http://127.0.0.1:11434",
+               "docker_container":  "jarvis-ollama",
+               "timeout_seconds":  240,
+               "max_items_per_run":  8
+           }
+}
