@@ -11,7 +11,17 @@ Everything is local and nothing is ever deleted without a yes. Moves are logged 
 | **Hide Spotlight icon.ps1** | Hides Windows Spotlight's "Learn about this image" desktop icon, for your account or every account (`-AllUsers`, as Administrator). Uses Windows' own per-user `HideDesktopIcons` switch; takes effect instantly. |
 | **Get-DesktopIcons.ps1** | Lists the icons Explorer is really showing on the desktop (handy for testing). |
 
-## Setup
+## Install
+```powershell
+powershell -ExecutionPolicy Bypass -File .\Install.ps1
+```
+It asks before each step (Enter accepts the default): copy the tools, create the Inbox, add the two desktop
+shortcuts, install the optional PDF/picture readers (`pypdf`, `pillow`), hide the Spotlight icon for your account,
+and, only if you say yes, for every account (Windows shows its own Administrator prompt).
+Switches: `-Yes` (accept defaults), `-AllAccounts`, `-DryRun` (change nothing), `-Uninstall`.
+Uninstall removes the shortcuts and settings it made; your files, Inbox and logs are kept.
+
+## Setup details
 - Windows 10/11, PowerShell 5.1, Python 3.10+ (`pip install --user pypdf pillow` for PDF reading).
 - Paths are set at the top of each script (`C:\Users\Public\Desktop`, Inbox `C:\Users\Public\Inbox`).
 - Copy `inbox-sorter/config.example.json` to `config.json` and describe your own folders; the descriptions are what the local AI reads.
